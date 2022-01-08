@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.lalezar {
+    font-family: 'Lalezar', cursive;
+}
+
+.vazir {
+    font-family: 'Vazir', sans-serif;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+input[type=search] {
+    font-family: 'Lalezar',sans-serif;
+}
+
+.search-ico {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.02rem;
+    bottom: 0.75rem;
+    font-size: 2.25rem;
+    color: rgb(75 85 99);
+}
