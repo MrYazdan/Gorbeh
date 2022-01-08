@@ -10,21 +10,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="w-full">
+<section>
     <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
         <div class="relative text-right">
-            <div class="absolute left-8 top-8"><a href="https://github.com/MrYazdan/Gorbeh" title="مخزن گربه در گیتهاب" target="_blank" class="hover:text-sky-700 text-sky-800"><i class="gb gb_github text-4xl"></i></a></div>
+            <div class="absolute left-8 top-8"><a href="https://github.com/MrYazdan/Gorbeh" title="مخزن گربه در گیتهاب"
+                                                  target="_blank" class="hover:text-sky-700 text-sky-800"><i
+                    class="gb gb_github text-4xl"></i></a></div>
             <h1 class="text-6xl md:text-8xl lalezar text-sky-600">گربه</h1>
             <p class="vazir py-2 font-bold text-xl text-gray-600">نشانک های نوشتاری برای طراحان</p>
         </div>
     </div>
 </section>
 <section class="w-full border-t-8 border-sky-600 z-20 sticky top-0">
-    <nav class="bg-gray-100 grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg rounded-b-lg overflow-hidden relative" style="top: -1px">
-        <div nav-type="utility" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">ویژگی ها</div>
+    <nav class="bg-gray-100 grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg rounded-b-lg overflow-hidden relative"
+         style="top: -1px">
+        <div nav-type="utility"
+             class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">ویژگی
+            ها
+        </div>
         <div nav-type="icons" class="py-4 lalezar bg-sky-600 text-xl sm:text-2xl text-white">نشانک ها</div>
-        <div nav-type="use" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">استفاده</div>
-        <div nav-type="install" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">نصب</div>
+        <div nav-type="use"
+             class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">استفاده
+        </div>
+        <div nav-type="install"
+             class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">نصب
+        </div>
     </nav>
 </section>
 <section id="tabs" class="max-w-screen-xl relative mx-auto">
@@ -35,15 +45,64 @@
     <!--  icons tab  -->
     <div id="tab-icons">
         <div class="relative">
-            <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..." class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">
+            <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..."
+                   class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">
             <label class="search-ico" for="searchbar"><i class="gb gb_search"></i></label>
         </div>
-        <div id="icon-main" class="grid grid-cols-3 p-4 gap-4 sm:grid-cols-6 sm:p-6 sm:gap-6 md:grid-cols-8 lg:grid-cols-10 lg:gap-8 lg:p-8 xl:grid-cols-12">
+        <div id="icon-main"
+             class="grid grid-cols-3 p-4 gap-4 sm:grid-cols-6 sm:p-6 sm:gap-6 md:grid-cols-8 lg:grid-cols-10 lg:gap-8 lg:p-8 xl:grid-cols-12">
         </div>
     </div>
     <!--  use tab  -->
     <div id="tab-use">
-        <h1>use</h1>
+        <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
+            <div class="relative text-right">
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    پس از نصب <b>گربه</b> ،‌ استفاده از نشانک ها بسیار ساده است.
+                    <br>
+                    در قسمت <b>نشانک ها</b> نشانک مورد نظر خود را انتخاب کنید ، سپس با کپی کردن <b> کلاس</b> نشانک ،
+                    بصورت زیر از آن استفاده کنید:
+                </p>
+                <p class="px-2 py-2 mb-8 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
+                    &lt;i class=&quot;gb &#0160 [gorbeh class icon]&quot;&gt;&lt;/i&gt;
+                </p>
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    برای مثال ما نشانک اندروید را انتخاب کردیم ، با کپی کردن کلاس آن یعنی
+                    <span class="mx-1 px-2 py-1 lalezar bg-gray-100 rounded-lg">gb_android</span>
+                    از آن استفاده میکنیم :
+                </p>
+                <p class="mt-1 px-2 py-2 mb-4 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
+                    &lt;i class=&quot;gb &#0160 gb_android&quot;&gt;&lt;/i&gt;
+                </p>
+                <p class="vazir relative leading-10 rtl py-2 text-xl text-gray-600">
+                    نتیجه :
+                    <span class="text-left absolute left-0 mt-1 text-gray-700 text-2xl">
+                        <i class="gb gb_android"></i>
+                    </span>
+                </p>
+                <p class="vazir mt-4 relative leading-10 rtl py-2 text-xl text-gray-600">
+                    با استفاده از
+                    <b>ویژگی های گربه</b>
+                    شما قادر به
+                    <b class="text-sky-600">تغییر رنگ</b> ،
+                    <b class="text-orange-500">تغییر اندازه</b> و
+                    <b class="text-green-600">افکت های انیمیشنی</b>
+                    خواهید بود :)
+                </p>
+                <p class="vazir relative leading-10 rtl py-2 text-xl text-gray-600">
+                    برای مثال با افزودن دو ویژگی اندازه و رنگ نشانک اندروید را تغییر میدهیم :
+                </p>
+                <p class="mt-1 px-2 py-2 mb-4 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
+                    &lt;i class=&quot;gb &#0160 gb_android  &#0160 gb_s48  &#0160  gb_color_green&quot;&gt;&lt;/i&gt;
+                </p>
+                <p class="vazir relative leading-10 rtl py-2 text-xl text-gray-600">
+                    نتیجه :
+                    <span class="text-left absolute left-0 mt-1 text-gray-700 text-2xl">
+                        <i class="gb gb_android gb_s48 text-green-500"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
     </div>
     <!--  install tab  -->
     <div id="tab-install">
