@@ -5,7 +5,7 @@
     <title>گربه</title>
     <link rel="stylesheet" href="gorbeh/css/gorbeh-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.1.0/font-face.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwindcss.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +22,7 @@
     </div>
 </section>
 <section class="w-full border-t-8 border-sky-600 z-20 sticky top-0">
-    <nav class="bg-gray-100 grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg rounded-b-lg overflow-hidden relative"
+    <nav class="bg-gray-100 grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg lg:rounded-b-lg overflow-hidden relative"
          style="top: -1px">
         <div nav-type="utility"
              class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">ویژگی
@@ -40,6 +40,215 @@
 <section id="tabs" class="max-w-screen-xl relative mx-auto">
     <!--  icons utility  -->
     <div id="tab-utility">
+        <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
+            <p class="rtl leading-9 vazir mb-8 text-xl text-gray-600">
+                ویژگی های گربه به شما امکان استفاده ی آسان و بهینه را میدهد.
+                <br>
+                برای استفاده کافیست کلاس مورد نظر را کنار کلاس نشانک خود اضافه کنید :)
+            </p>
+            <h1 class="vazir pb-4 border-b-4 border-gray-600 font-bold rtl text-xl text-sky-600">
+                <span class="rounded-t-lg py-1 px-4 bg-gray-600 text-white relative -bottom-3">تغییر اندازه</span>
+            </h1>
+            <div class="grid grid-cols-4 gap-4 py-8 mb-6">
+                <div class="pt-7">
+                    <div class="text-center">
+                        <i class="gb gb_info gb_s18 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_s18</p>
+                </div>
+                <div class="pt-6">
+                    <div class="text-center">
+                        <i class="gb gb_info gb_s24 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_s24</p>
+                </div>
+                <div class="pt-3">
+                    <div class="text-center">
+                        <i class="gb gb_info gb_s36 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_s36</p>
+                </div>
+                <div class="">
+                    <div class="text-center">
+                        <i class="gb gb_info gb_s48 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_s48</p>
+                </div>
+            </div>
+            <p class="rtl leading-9 vazir mb-8 text-xl text-gray-600">
+                برای تغییر اندازه دلخواه شما ، میتوانید با تنظیم ویژگی
+                <span class="mx-1 px-2 py-1 lalezar bg-gray-100 rounded-lg">font-size</span>
+                در شِمای ( استایل ) کلی صفحه اندازه هر نشانک را سفارشی سازی کنید!
+            </p>
+            <h1 class="vazir pb-4 border-b-4 border-gray-600 font-bold rtl text-xl text-sky-600">
+                <span class="rounded-t-lg py-1 px-4 bg-gray-600 text-white relative -bottom-3">تغییر زاویه</span>
+            </h1>
+            <div class="grid grid-cols-4 gap-4 py-8 mb-6">
+                <div class="pt-2">
+                    <div class="text-center">
+                        <i class="gb gb_accessible text-4xl sm:text-7xl lg:text-8xl gb_r90 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_r90</p>
+                </div>
+                <div class="pt-2">
+                    <div class="text-center">
+                        <i class="gb gb_accessible text-4xl sm:text-7xl lg:text-8xl gb_r180 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_r180</p>
+                </div>
+                <div class="pt-2">
+                    <div class="text-center">
+                        <i class="gb gb_accessible text-4xl sm:text-7xl lg:text-8xl gb_r270 gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_r270</p>
+                </div>
+                <div class="pt-2">
+                    <div class="text-center">
+                        <i class="gb gb_accessible text-4xl sm:text-7xl lg:text-8xl gb_mirror gb_color_gray"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_mirror</p>
+                </div>
+            </div>
+            <p class="rtl leading-9 vazir mb-8 text-xl text-gray-600">
+                برای تغییر زاویه دلخواه شما ، میتوانید با تنظیم ویژگی
+                <span class="mx-1 px-2 py-1 lalezar bg-gray-100 rounded-lg">transform: rotate</span>
+                در شِمای ( استایل ) کلی صفحه درجه زاویه هر نشانک را سفارشی سازی کنید!
+            </p>
+            <h1 class="vazir pb-4 border-b-4 border-gray-600 font-bold rtl text-xl text-sky-600">
+                <span class="rounded-t-lg py-1 px-4 bg-gray-600 text-white relative -bottom-3">رنگ ها</span>
+            </h1>
+            <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 py-4 mb-8">
+                <div class="col-span-3">
+                    <div class="rounded-lg bg-white h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_white</span>
+                </div>
+                <div class="col-span-3">
+                    <div class="rounded-lg bg-black h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_black</span>
+                </div>
+                <!-- gray -->
+                <div>
+                    <div class="rounded-lg bg-slate-300 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_gray_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-slate-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_gray</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-slate-700 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_gray_dark</span>
+                </div>
+                <!-- blue -->
+                <div>
+                    <div class="rounded-lg bg-sky-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_blue_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-sky-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_blue</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-sky-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_blue_dark</span>
+                </div>
+                <!-- purple -->
+                <div>
+                    <div class="rounded-lg bg-purple-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_purple_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-purple-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_purple</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-purple-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_purple_dark</span>
+                </div>
+                <!-- pink -->
+                <div>
+                    <div class="rounded-lg bg-pink-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_pink_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-pink-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_pink</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-pink-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_pink_dark</span>
+                </div>
+                <!-- red -->
+                <div>
+                    <div class="rounded-lg bg-red-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_red_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-red-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_red</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-red-700 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_red_dark</span>
+                </div>
+                <!-- orange -->
+                <div>
+                    <div class="rounded-lg bg-orange-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_orange_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-orange-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_orange</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-orange-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_orange_dark</span>
+                </div>
+                <!-- yellow -->
+                <div>
+                    <div class="rounded-lg bg-yellow-300 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_yellow_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-yellow-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_yellow</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-yellow-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_yellow_dark</span>
+                </div>
+                <!-- green -->
+                <div>
+                    <div class="rounded-lg bg-lime-400 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_green_light</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-lime-500 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_green</span>
+                </div>
+                <div>
+                    <div class="rounded-lg bg-lime-600 h-20 shadow-lg"></div>
+                    <span class="block text-center mt-2 text-gray-600 text-sm">gb_color_green_dark</span>
+                </div>
+            </div>
+            <p class="rtl leading-9 vazir mb-8 text-xl text-gray-600">
+                برای تغییر رنگ دلخواه شما ، میتوانید با تنظیم ویژگی
+                <span class="mx-1 px-2 py-1 lalezar bg-gray-100 rounded-lg">color</span>
+                در شِمای ( استایل ) کلی صفحه رنگ هر نشانک را سفارشی سازی کنید!
+            </p>
+            <h1 class="vazir pb-4 border-b-4 border-gray-600 font-bold rtl text-xl text-sky-600">
+                <span class="rounded-t-lg py-1 px-4 bg-gray-600 text-white relative -bottom-3">افکت های پویانمایی ( انیمیشنی )</span>
+            </h1>
+            <div class="grid grid-cols-3 gap-8 py-8 mb-6">
+                <div class="">
+                    <div class="text-center">
+                        <i class="gb gb_settings text-4xl sm:text-7xl lg:text-8xl mr-2 lg:mr-6 gb_color_gray gb_animate_spin"></i>
+                        <i class="gb gb_3d_rotation text-3xl sm:text-6xl lg:text-7xl ml-2 lg:ml-6 gb_color_gray gb_animate_spin"></i>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">gb_animate_spin</p>
+                </div>
+            </div>
+        </div>
     </div>
     <!--  icons tab  -->
     <div id="tab-icons">
@@ -92,7 +301,7 @@
                     برای مثال با افزودن دو ویژگی اندازه و رنگ نشانک اندروید را تغییر میدهیم :
                 </p>
                 <p class="mt-1 px-2 py-2 mb-4 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
-                    &lt;i class=&quot;gb &#0160 gb_android  &#0160 gb_s48  &#0160  gb_color_green&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;gb &#0160 gb_android &#0160 gb_s48 &#0160 gb_color_green&quot;&gt;&lt;/i&gt;
                 </p>
                 <p class="vazir relative leading-10 rtl py-2 text-xl text-gray-600">
                     نتیجه :

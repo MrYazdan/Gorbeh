@@ -1,5 +1,5 @@
 $('#tabs').children('div').hide()
-$('#tab-utility').fadeIn(500)
+$('#tab-install').fadeIn(500)
 
 // icon generators
 let icons = [
