@@ -11,6 +11,11 @@
 </head>
 <body>
 <section>
+    <div style="display: none" class="msg-copy bg-green-600 font-bold text-white px-8 border-4 border-r-0 border-green-700 py-5 z-30 bottom-2 right-0 text-xl rounded-l-xl">
+        نشانک مورد نظر کپی شد!
+    </div>
+</section>
+<section>
     <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
         <div class="relative text-right">
             <div class="absolute left-8 top-8"><a href="https://github.com/MrYazdan/Gorbeh" title="مخزن گربه در گیتهاب"
@@ -252,13 +257,17 @@
     </div>
     <!--  icons tab  -->
     <div id="tab-icons">
-        <div class="relative">
-            <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..."
-                   class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">
-            <label class="search-ico" for="searchbar"><i class="gb gb_search"></i></label>
-        </div>
-        <div id="icon-main"
-             class="grid grid-cols-3 p-4 gap-4 sm:grid-cols-6 sm:p-6 sm:gap-6 md:grid-cols-8 lg:grid-cols-10 lg:gap-8 lg:p-8 xl:grid-cols-12">
+<!--        <div class="relative">-->
+<!--            <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..."-->
+<!--                   class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">-->
+<!--            <label class="search-ico" for="searchbar"><i class="gb gb_search"></i></label>-->
+<!--        </div>-->
+        <p class="max-w-screen-xl mx-auto px-4 vazir leading-10 rtl py-4 text-xl text-gray-600">
+            برای کپی کردن کلاس یک نشانک کافیست روی آن
+            <b>کلیک</b>
+            کنید ^_^
+        </p>
+        <div id="icon-main" class="grid grid-cols-2 p-4 gap-4 sm:grid-cols-3 sm:p-6 sm:gap-6 md:grid-cols-4 lg:grid-cols-5 lg:gap-8 lg:p-8 xl:grid-cols-6">
         </div>
     </div>
     <!--  use tab  -->
@@ -314,7 +323,34 @@
     </div>
     <!--  install tab  -->
     <div id="tab-install">
-        <h1>install</h1>
+        <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
+            <div class="relative text-right">
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    برای نصب نشانک گربه کافیست آخرین نسخه آن را دریافت کنید ، لینک دانلود :
+                </p>
+                <p class="px-2 py-2 mb-8 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
+                    <a href="#" class="text-sky-600">https://github.com/mryazdan/gorbeh</a>
+                </p>
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    پس از دانلود فایل فشرده ، آنرا در پروژه ی خود از حالت فشرده خارج کنید.
+                    <br>
+                    <b>توجه » لطفا ترتیب شاخه ها و فایل هارا تغییر ندهید در این صورت آدرس دهی فونت نشانک ها با مشکل
+                        مواجه خواهد شد.</b>
+                </p>
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    فرآیند نصب با موفقیت به پایان رسید فقط کافیست آنرا در تنظیمات هر صفحه ی وب اضافه کنید:
+                </p>
+                <p class="px-2 py-2 mb-8 lalezar bg-gray-100 rounded-lg text-gray-600 text-xl text-left">
+                    &lt;link rel=&quot;stylesheet&quot; &#0160 href=&quot;gorbeh/css/gorbeh-icons.min.css&quot;&gt;
+                    <link href="gorbeh/css/gorbeh-icons.min.css">
+                </p>
+                <p class="vazir leading-10 rtl py-2 text-xl text-gray-600">
+                    برای استفاده دقیق تر میتوانید از قسمت
+                    <b>استفاده</b>
+                    بهره ببرید!
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 <script src="scripts.js"></script>

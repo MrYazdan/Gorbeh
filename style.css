@@ -13,7 +13,7 @@
 }
 
 input[type=search] {
-    font-family: 'Lalezar',sans-serif;
+    font-family: 'Lalezar', sans-serif;
 }
 
 .search-ico {
@@ -25,3 +25,8 @@ input[type=search] {
     color: rgb(75 85 99);
 }
 
+.msg-copy {
+    position: fixed;
+    direction: rtl;
+    font: 25px 'Vazir';
+}

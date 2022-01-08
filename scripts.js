@@ -1,5 +1,5 @@
 $('#tabs').children('div').hide()
-$('#tab-install').fadeIn(500)
+$('#tab-icons').fadeIn(500)
 
 // icon generators
 let icons = [
@@ -964,8 +964,9 @@ let icons = [
 ]
 for (let ico of icons) {
     $('#icon-main').append(
-        `<div title="${ico}" class="text-center cursor-pointer text-gray-600 rounded-lg relative">` +
-        `   <i class="gb text-6xl ${ico}"></i>` +
+        `<div title="${ico}" class="text-center cursor-pointer hover:text-gray-500 text-gray-600 rounded-lg relative">` +
+        `   <i class="gb text-7xl md:text-8xl block ${ico}"></i>` +
+        `   <span class="text-sm block text-center mt-2">${ico}</span>` +
         '</div>')
 }
 
@@ -982,4 +983,15 @@ $('nav > div').click(function () {
     $('nav').children('div').attr('class', 'py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200')
     $(this).attr('class', 'py-4 lalezar bg-sky-600 text-xl sm:text-2xl text-white')
     switcher(type)
+})
+
+// clipboard
+$('#icon-main > div').click(function (){
+    let cls = $(this).children('span')
+    navigator.clipboard.writeText(cls.text())
+
+    $('.msg-copy').fadeIn(300)
+    setTimeout(function () {
+        $('.msg-copy').fadeOut(300)
+    },3000)
 })
