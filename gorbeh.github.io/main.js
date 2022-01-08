@@ -1,3 +1,6 @@
+$('#tabs').children('div').hide()
+$('#tab-icons').fadeIn(500)
+
 // icon generators
 let icons = [
     // User :
@@ -966,3 +969,17 @@ for (let ico of icons) {
         '</div>')
 }
 
+// tab swicher
+function switcher(type) {
+    $('#tabs > div').fadeOut(500)
+    setTimeout(function () {
+        console.log($(`#tab-${type}`).fadeIn(600))
+    },510)
+}
+
+$('nav > div').click(function () {
+    let type = $(this).attr('nav-type')
+    $('nav').children('div').attr('class', 'py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200')
+    $(this).attr('class', 'py-4 lalezar bg-sky-600 text-xl sm:text-2xl text-white')
+    switcher(type)
+})

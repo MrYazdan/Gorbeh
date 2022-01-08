@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="w-full border-b-8 border-sky-600">
+<section class="w-full">
     <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
         <div class="relative text-right">
             <div class="absolute left-8 top-8"><a href="https://github.com/MrYazdan/Gorbeh" title="مخزن گربه در گیتهاب" target="_blank" class="hover:text-sky-700 text-sky-800"><i class="gb gb_github text-4xl"></i></a></div>
@@ -19,18 +19,35 @@
         </div>
     </div>
 </section>
-<nav class="grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg rounded-b-lg overflow-hidden">
-    <div nav-action="utility" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">ویژگی ها</div>
-    <div nav-action="icons" class="py-4 lalezar bg-sky-600 text-xl sm:text-2xl text-white">نشانک ها</div>
-    <div nav-action="use" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">استفاده</div>
-    <div nav-action="install" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">نصب</div>
-</nav>
-<section id="main" class="max-w-screen-xl relative mx-auto">
-    <div class="relative">
-        <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..." class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">
-        <label class="search-ico" for="searchbar"><i class="gb gb_search"></i></label>
+<section class="w-full border-t-8 border-sky-600 z-20 sticky top-0">
+    <nav class="bg-gray-100 grid grid-cols-4 mb-4 max-w-screen-xl mx-auto text-center shadow-lg rounded-b-lg overflow-hidden relative" style="top: -1px">
+        <div nav-type="utility" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">ویژگی ها</div>
+        <div nav-type="icons" class="py-4 lalezar bg-sky-600 text-xl sm:text-2xl text-white">نشانک ها</div>
+        <div nav-type="use" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">استفاده</div>
+        <div nav-type="install" class="py-4 cursor-pointer lalezar bg-gray-100 text-xl sm:text-2xl text-gray-600 hover:bg-gray-200">نصب</div>
+    </nav>
+</section>
+<section id="tabs" class="max-w-screen-xl relative mx-auto">
+    <!--  icons utility  -->
+    <div id="tab-utility">
+        <h1>utility</h1>
     </div>
-    <div id="icon-main" class="grid grid-cols-3 p-4 gap-4 sm:grid-cols-6 sm:p-6 sm:gap-6 md:grid-cols-8 lg:grid-cols-10 lg:gap-8 lg:p-8 xl:grid-cols-12">
+    <!--  icons tab  -->
+    <div id="tab-icons">
+        <div class="relative">
+            <input type="search" id="searchbar" placeholder="جستجو در نشانک ها ..." class="rtl text-gray-600 block focus:outline-none focus:ring-4 shadow-lg focus:ring-gray-200 w-full p-3 rounded-md pr-14 text-right text-2xl mt-4 sm:mt-6 bg-gray-100">
+            <label class="search-ico" for="searchbar"><i class="gb gb_search"></i></label>
+        </div>
+        <div id="icon-main" class="grid grid-cols-3 p-4 gap-4 sm:grid-cols-6 sm:p-6 sm:gap-6 md:grid-cols-8 lg:grid-cols-10 lg:gap-8 lg:p-8 xl:grid-cols-12">
+        </div>
+    </div>
+    <!--  use tab  -->
+    <div id="tab-use">
+        <h1>use</h1>
+    </div>
+    <!--  install tab  -->
+    <div id="tab-install">
+        <h1>install</h1>
     </div>
 </section>
 <script src="main.js"></script>
