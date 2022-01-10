@@ -21,11 +21,6 @@ To power up your website with Gorbeh Icons, follow these steps:
 3) Add these lines to your HTML file header:
 ```html
 <!-- Gorbeh Icons -->
-<link href="your_directory/css/gorbeh-icons.css" rel="stylesheet">
-```
-  or
-```html
-<!-- Gorbeh Icons -->
 <link href="your_directory/css/gorbeh-icons.min.css" rel="stylesheet">
 ```
 4) Implement an icon:
