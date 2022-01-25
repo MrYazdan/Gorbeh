@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>گربه</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        (function(){
+            var now = new Date();
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.async = true;
+            var script_address = 'https://cdn.yektanet.com/js/mryazdan.github.io/native-mryazdan.github.io-23147.js';
+            script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
+            head.appendChild(script);
+        })();
+    </script>
     <link rel="stylesheet" href="gorbeh/css/gorbeh-icons.min.css">
     <link rel="stylesheet" href="Vazir/font.css">
     <script src="jquery-3.6.0.min.js"></script>
@@ -16,8 +27,8 @@
     </div>
 </section>
 <section>
-    <div class="max-w-screen-xl mx-auto grid p-8 lg:p-12">
-        <div class="relative text-right">
+    <div class="max-w-screen-xl mx-auto grid p-8 relative lg:p-12 grid  gird-cols-1 sm:grid-cols-2">
+        <div class="relative text-right sm:col-span-2">
             <div class="absolute left-8 top-8"><a href="https://github.com/MrYazdan/Gorbeh" title="مخزن گربه در گیتهاب"
                                                   target="_blank" class="hover:text-sky-700 text-sky-800"><i
                     class="gb gb_github text-4xl"></i></a></div>
@@ -352,6 +363,11 @@
             </div>
         </div>
     </div>
+</section>
+<section class="max-w-screen-xl relative mx-auto mt-8">
+    <hr class="bg-sky-600 w-full h-8 relative top-12">
+    <h1 class="text-4xl md:text-5xl lalezar text-sky-600 text-center relative mb-4"><span class="px-6 py-2 inline-block bg-white rounded-lg z-20">تبلیغات</span></h1>
+    <div id="pos-article-display-66380"></div>
 </section>
 <script src="scripts.js"></script>
 </body>
